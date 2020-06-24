@@ -1,12 +1,12 @@
-module.exports = function (app) {
-    var controlPanel = {}
+var app = app || {};
 
-    controlPanel.init() = function () {
+var controlPanel = {}
 
-    }
+controlPanel.init = function () {
 
-
-
-
-    app.controlPanel = controlPanel;
 }
+
+
+
+
+app.controlPanel = controlPanel;

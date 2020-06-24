@@ -3,7 +3,7 @@ var app = express();
 const open = require('open');
 var path = require('path')
 
-app.use(express.static('src/javascript/'));
+app.use(express.static('src/'));
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/src/index.html'));
@@ -13,7 +13,7 @@ app.listen(3000, function () {
     console.log('Simulator running on port 3000');
 });
 
-open('http://localhost:3000', { app: 'google chrome' });
+open('http://localhost:3000', { app: 'chrome' });
 
 
 var WebSocketServer = require("ws").Server;

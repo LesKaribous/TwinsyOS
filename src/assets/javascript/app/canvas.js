@@ -1,23 +1,23 @@
-module.exports = function (app) {
-    var canvas = {}
+var app = app || {};
 
-    canvas.init() = function () {
-        displayBoard();
-    }
+var canvas = {};
 
-    function displayBoard() {
-        var canvas = document.getElementById('tutorial');
-        if (canvas.getContext) {
-            var ctx = canvas.getContext('2d');
+canvas.init = function () {
+    displayBoard();
+}
 
-            base_image = new Image();
-            base_image.src = 'img/map.svg';
+function displayBoard() {
+    var canvas = document.getElementById('tutorial');
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
 
-            base_image.onload = function () {
-                ctx.drawImage(base_image, 0, 0, canvas.width, canvas.height);
-            }
+        base_image = new Image();
+        base_image.src = 'img/map.svg';
+
+        base_image.onload = function () {
+            ctx.drawImage(base_image, 0, 0, canvas.width, canvas.height);
         }
     }
-
-    app.canvas = canvas;
 }
+
+app.canvas = canvas;
