@@ -13,7 +13,7 @@ app.listen(3000, function () {
     console.log('Simulator running on port 3000');
 });
 
-open('http://localhost:3000', { app: 'chrome' });
+open('http://localhost:3000', { app: 'google chrome' });
 
 
 var WebSocketServer = require("ws").Server;
@@ -29,7 +29,7 @@ ws.on('connection', function (ws) {
         switch (ob.type) {
             case 'text':
                 console.log("Received: " + ob.content)
-                ws.send('{ "type":"text", "content":"Server ready."}')
+                ws.send('{ "type":"text", "content":"ServerReady"}')
                 break;
         }
     })
