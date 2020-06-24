@@ -19,7 +19,16 @@ ws.onmessage = function (event) {
     var message = JSON.parse(event.data);
     switch (message.type) {
         case "text":
-            dispMessage(message.content);
+            switch (message.content) {
+                case "ServerReady":
+                    document.getElementById("led").style.backgroundColor = "green";
+                    break;
+
+                default:
+                    dispMessage(message.content);
+                    break;
+            }
+
             break;
     }
 };
