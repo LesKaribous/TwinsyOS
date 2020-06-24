@@ -1,0 +1,24 @@
+table {
+        width:10%;
+}
+
+th, td {
+    padding: 5px;
+    border:1px solid white;
+    width:5%;
+}
+
+td {
+    text-align:center;
+}
+
+caption {
+    font-weight:bold
+}
+
+.valueDisplayer{
+    font-size: 15px;
+    color: #999;
+    padding-left: 5px;
+}
+
