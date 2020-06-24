@@ -1,8 +1,31 @@
-canvas {
-    border: 1px solid black; 
-}
+
 
 .brand-logo{
     width: 25%;
     height: auto;
+}
+
+.messageBoxInitialMessage{
+    font-weight:bold;
+    font-size: small;
+}
+
+#messageBoxDiv{
+    border: 1px solid gray; 
+}
+
+#controleur{
+    margin-left: 2px;
+}
+
+
+.led {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    background-color: red;
+
 }
