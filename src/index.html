@@ -10,9 +10,12 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
+    <link href="assets/css/ControlPanel.css" rel="stylesheet">
     <link href="assets/css/nouislider.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
@@ -26,34 +29,49 @@
             <!-- <a href="#" class="brand-logo">Logo</a> -->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
+                <li><a href="sass.html">A def</a></li>
+                <li><a href="badges.html">A def</a></li>
+                <li><a href="collapsible.html">A def</a></li>
             </ul>
-            <div id="message"></div>
+            <div id="led-box">
+                <div id="led" class="led"></div>
+            </div>
         </div>
         <div class="nav-content">
             <ul class="tabs tabs-transparent">
-                <li class="tab"><a href="#test1">Test 1</a></li>
-                <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-                <li class="tab"><a href="#test4">Test 4</a></li>
+                <li class="tab"><a class="active" href="#controleur">Controleur</a></li>
+                <li class="tab"><a href="#test2">Simulateur</a></li>
+                <li class="tab"><a href="#test4">G-Code</a></li>
             </ul>
-
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
+    <div id="controleur" class="col s12">
+        <div class="row">
+            <div class="col s3">
+                <div id="panelControl"></div>
+            </div>
 
-    <h3>Bienvenue sur le simulateur des Karibous</h3>
+            <div class="col s9">
+                <div class="row">
+                    <div class="col s12">
+                        <canvas id="tutorial" width="600" height="400"></canvas>
+                    </div>
+
+                    <div id="messageBoxDiv" class="col s12">
+                        <p class="messageBoxInitialMessage"><u>Log :</u></p>
+
+                        <p>
+                            Bonjour je suis une message box je suis là pour afficher les actions en cours d'execution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <canvas id="tutorial" width="500" height="300"></canvas>
 
-    <div id="panelControl"></div>
 
 
 
@@ -66,6 +84,13 @@
 
     <!-- Libs -->
     <script src="assets/javascript/lib/nouislider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            app.init();
+        });
+    </script>
+
 </body>
 
 </html>
