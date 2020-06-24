@@ -1,7 +1,9 @@
 <div id="panelControl">
+
+    <!-- Div containing all the switches used to activate the pump or vanne -->
     <div id="switchs" class="row">
-        <div id="leftSide" class="col s2">
-            <div class="switch">
+        <div id="leftSide" class="col s6">
+            <div class="switch center">
                 <label>
                     Off
                     <input type="checkbox">
@@ -11,7 +13,7 @@
                 <p>Pompe gauche</p>
             </div>
 
-            <div class="switch">
+            <div class="switch center">
                 <label>
                     Off
                     <input type="checkbox">
@@ -22,8 +24,8 @@
             </div>
         </div>
 
-        <div id="rightSide" class="col s2">
-            <div class="switch">
+        <div id="rightSide" class="col s6">
+            <div class="switch center">
                 <label>
                     Off
                     <input type="checkbox">
@@ -32,7 +34,7 @@
                 </label>
                 <p>Pompe droite</p>
             </div>
-            <div class="switch">
+            <div class="switch center">
                 <label>
                     Off
                     <input type="checkbox">
@@ -42,24 +44,59 @@
                 <p>Vanne droite</p>
             </div>
         </div>
-
     </div>
 
-    <div id="servoPots" class="row">
-        <div class="col s2">
-            <div id="slider-pips"></div>
-            <!-- <div id="slider-pips"></div> -->
+    <!-- Div containing the sliders for arms positions -->
+    <div id="servoPots">
+        <div id="servoBras" class="row">
+            <div class="col s6">
+                <p class="center">Bras G</p>
+                <div id="slider1"></div>
+
+                <p class="valueDisplayer" id="servoPotValue1"></p>
+                <!-- <a class="btn-floating btn-small waves-effect waves-light orange"><i
+                        class="tiny material-icons">check</i></a> -->
+
+            </div>
+
+            <div class="col s6">
+                <p class="center">Bras D</p>
+                <div id="slider2"></div>
+                <p class="valueDisplayer" id="servoPotValue2"></p>
+            </div>
         </div>
 
-        <div class="col s2">
-            <!-- <div id="slider-pips"></div>
-            <div id="slider-pips"></div> -->
+        <div id="servoPoignet" class="row">
+            <div class="col s6">
+                <p class="center">Poignet G</p>
+                <div id="slider3"></div>
+                <p class="valueDisplayer" id="servoPotValue3"></p>
+
+            </div>
+
+            <div class="col s6">
+                <p class="center">Poignet D</p>
+                <div id="slider4"></div>
+                <p class="valueDisplayer" id="servoPotValue4"></p>
+            </div>
         </div>
     </div>
 
-    <div id="robotControlKeys">
-
+    <!-- Table containing the arrow keys -->
+    <div id="robotControlKeys" class="row">
+        <table class="col s1">
+            <tr>
+                <td>&nbsp;</td>
+                <td><a class="waves-effect waves-light btn black"> <i class="material-icons">arrow_upward</i></a></td>
+            </tr>
+            <tr>
+                <td><a class="waves-effect waves-light btn black"><i class="material-icons">arrow_back</i></a></td>
+                <td><a class="waves-effect waves-light btn black"><i class="material-icons">arrow_downward</i></a></td>
+                <td><a class="waves-effect waves-light btn black"><i class="material-icons">arrow_forward</i></a></td>
+            </tr>
+        </table>
     </div>
+
 
     <div id="armSlider">
 
