@@ -1,8 +1,8 @@
 var app = app || {};
 
-var canvas = {};
+var Canvas = {};
 
-canvas.init = function () {
+Canvas.init = function () {
     displayBoard();
 }
 
@@ -20,4 +20,4 @@ function displayBoard() {
     }
 }
 
-app.canvas = canvas;
+app.Canvas = Canvas;
