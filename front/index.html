@@ -23,9 +23,10 @@
 
 <body>
 
+    <!-- Navbar-->
     <nav class="nav-extended orange">
         <div class="nav-wrapper">
-            <img class="brand-logo center" src="./img/LOGO_KARIBOUS.png" />
+            <img id="bran-logo" class="brand-logo center" src="./img/LOGO_KARIBOUS.png"/>
             <!-- <a href="#" class="brand-logo">Logo</a> -->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -40,8 +41,8 @@
         <div class="nav-content">
             <ul class="tabs tabs-transparent">
                 <li class="tab"><a class="active" href="#controleur">Controleur</a></li>
-                <li class="tab"><a href="#test2">Simulateur</a></li>
-                <li class="tab"><a href="#test4">G-Code</a></li>
+                <li class="tab"><a href="#simulateur">Simulateur</a></li>
+                <li class="tab"><a href="#code">G-Code</a></li>
             </ul>
         </div>
     </nav>
@@ -70,7 +71,29 @@
         </div>
     </div>
 
+    <div id="simulateur" class="col s12">
+        <div class="row">
+            <div class="col s3">
+                <div id="panelControl"></div>
+            </div>
 
+            <div class="col s9">
+                <div class="row">
+                    <div class="col s12">
+                        <canvas id="tutorial" width="600" height="400"></canvas>
+                    </div>
+
+                    <div id="messageBoxDiv" class="col s12">
+                        <p class="messageBoxInitialMessage"><u>Log :</u></p>
+
+                        <p>
+                            Bonjour je suis une message box je suis là pour afficher les actions en cours d'execution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

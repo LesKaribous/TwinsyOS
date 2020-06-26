@@ -1,8 +1,7 @@
 
-
-.brand-logo{
-    width: 25%;
-    height: auto;
+#brand-logo{
+    width: auto;
+    margin-top: 10%;
 }
 
 .messageBoxInitialMessage{
